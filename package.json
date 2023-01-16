@@ -1,0 +1,25 @@
+{
+  "name": "vscode-lifeplay",
+  "displayName": "vscode-lifeplay",
+  "description": "Lifeplay language extension for Visual Studio Code",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "lifeplay",
+      "aliases": ["LifePlay", "lifeplay"],
+      "extensions": [".lpmod", ".lpstat", ".lpscene", ".lptalk", ".lpai", ".lpdesc", ".lpaction"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "lifeplay",
+      "scopeName": "source.lifeplay",
+      "path": "./syntaxes/lifeplay.tmLanguage.json"
+    }]
+  }
+}
