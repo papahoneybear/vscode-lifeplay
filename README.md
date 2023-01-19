@@ -6,7 +6,6 @@
     - [Extensions Directory Location](#extensions-directory-location)
   - [Usage](#usage)
     - [Available Snippets](#available-snippets)
-    - [Snippets and Keywords](#snippets-and-keywords)
   - [Bug reporting](#bug-reporting)
   - [Contributing](#contributing)
 
@@ -57,10 +56,6 @@ appropriate snippet in the contextual menu.
 | Action template       | ACTION_UNIQUEID, action       | Creates action file structure       |
 | Interaction template  | ACTION_UNIQUEID, interaction  | Interaction file structure          |
 | Module template       | module, MODULE_UNIQUEID       | Module file structure               |
-
-
-### Snippets and Keywords
-
 
 ## Bug reporting
 
