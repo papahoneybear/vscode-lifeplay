@@ -4,6 +4,9 @@
   - [Features](#features)
   - [Installation](#installation)
     - [Extensions Directory Location](#extensions-directory-location)
+  - [Usage](#usage)
+    - [Available Snippets](#available-snippets)
+    - [Snippets and Keywords](#snippets-and-keywords)
   - [Bug reporting](#bug-reporting)
   - [Contributing](#contributing)
 
@@ -32,6 +35,32 @@ Depending on your OS, you can find the extensions directory:
 * Linux - ~/.vscode/extensions
 * Windows - %USERPROFILE%\.vscode\extensions
 * Mac - most likely ~/.vscode/extensions
+
+## Usage
+
+This extension currently provides basic code completion and snippets
+(templates). To execute a snippet, type part of a keyword and select the
+appropriate snippet in the contextual menu.
+
+![Snippet example](/images/snippet.png)
+
+### Available Snippets
+
+| Name                  | Keywords                      | Effect                              |
+| --------------------- | ----------------------------- | ----------------------------------- |
+| If block              | If, if                        | Creates if block                    |
+| While block           | While, while                  | Creates while block                 |
+| Random block          | Random, random                | Creates random block                |
+| Dialog block          | Tag, tag                      | Creates a dialog block for 2 actors |
+| Scene template        | WHAT, Scene                   | Creates scene file structure        |
+| Stat template         | stat, STAT_ID                 | Creates stat file structure         |
+| Action template       | ACTION_UNIQUEID, action       | Creates action file structure       |
+| Interaction template  | ACTION_UNIQUEID, interaction  | Interaction file structure          |
+| Module template       | module, MODULE_UNIQUEID       | Module file structure               |
+
+
+### Snippets and Keywords
+
 
 ## Bug reporting
 

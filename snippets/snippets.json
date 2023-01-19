@@ -1,0 +1,106 @@
+{
+    "If block": {
+        "prefix": ["If", "if"],
+        "body": ["If ${1:condition}", "\t$0", "Endif"]
+    },
+    "If-Else block": {
+        "prefix": ["If", "if"],
+        "body": ["If ${1:condition}", "\t$2", "Else", "\t$3", "Endif"]
+    },
+    "If-Elseif block": {
+        "prefix": ["If", "if"],
+        "body": ["If ${1:condition}", "\t$2", "Elseif", "\t$3", "Else", "\t$4"]
+    },
+    "While block": {
+        "prefix": ["While", "while"],
+        "body": ["While ${1:condition}", "\t$0", "Endif"]
+    },
+    "Random block": {
+        "prefix": ["Random", "random"],
+        "body": ["Random", "\t$0", "endRandom"]
+    },
+    "Scene template": {
+        "prefix": ["WHAT", "Scene"],
+        "body": [
+            "WHAT: ${1:none}",
+            "WHERE: ${2:none}",
+            "WHEN: ${3:0-24}",
+            "WHO: ${4:none}",
+            "OTHER: ${5:none}",
+            "",
+            "\tSceneStart()",
+            "",
+            "",
+            "\tSceneEnd()"
+        ]
+    },
+    "Stat template": {
+        "prefix": ["stat", "STAT_ID"],
+        "body": [
+            "STAT_ID: ${1:stat_id}",
+            "STAT_NAME: ${2:stat_name}",
+            "PLAYER_ONLY: ${3:false}",
+            "HIGHER_BETTER: ${4:true}",
+            "STAT_MIN: ${5:0}",
+            "STAT_MAX: ${6:0}",
+            "DAILY_CHANGE: ${7:0}",
+            "DEFAULT_VALUE: ${8:50}",
+            "NPC_ONLY: ${9:false}"
+        ]
+    },
+    "Action template": {
+        "prefix": ["ACTION_UNIQUEID", "action"],
+        "body": [
+            "ACTION_UNIQUEID: ${1:do_some_thing}",
+            "ACTION_NAME: ${2:Do some thing}"
+            "WHERE: ${3:home, work}",
+            "WHEN: ${4:0-24}",
+            "MINUTES: ${5:10-20}",
+            "TIMEOUT_MINUTES: ${6:20}",
+            "ALSO_TIMEOUT: $7",
+            "EFFECTS: ${8:mood +1 (START)}",
+            "CONDITIONS: ${9:attractiveness > 30 (STAT_COMPARE)}",
+            "MOVE_FIRST: ${10:true}",
+            "SCENE_ALWAYS: $11",
+            "ANIMATION: $12"
+        ]
+    },
+    "Interaction template": {
+        "prefix": ["ACTION_UNIQUEID", "interaction"],
+        "body": [
+            "ACTION_UNIQUEID: ${1:do_some_thing}",
+            "ACTION_NAME: ${2:Do some thing}",
+            "WHERE: ${3:home, work}",
+            "WHEN: ${4:0-24}",
+            "MINUTES: ${5:10-20}",
+            "TIMEOUT_MINUTES: ${6:20}",
+            "ALSO_TIMEOUT: $7",
+            "EFFECTS: ${8:mood +1 (START)}",
+            "CONDITIONS: ${9:attractiveness > 30 (STAT_COMPARE)}",
+            "MOVE_FIRST: ${10:true}",
+            "SCENE_ALWAYS: $11",
+            "ANIMATION: $12",
+            "WHO: ${13:Actor = getTarget();}"
+        ]
+    },
+    "Dialog template": {
+        "prefix": ["Tag", "tag"],
+        "body": [
+            "Tag(${1:Couple})",
+            "\t${2:A1 is talking}",
+            "\t${3:A2 is talking}",
+            "##"
+        ]
+    },
+    "Module template": {
+        "prefix": ["MODULE_UNIQUEID", "module"],
+        "body": [
+            "MODULE_UNIQUEID: ${1:Unique identifier. Must match folder name.}",
+            "MODULE_NAME: ${2:Name of your module}",
+            "MODULE_AUTHOR: ${3:Me}",
+            "MODULE_LINK: ${4:https://someurl.com}",
+            "MODULE_DESCRIPTION: ${5:Description of module}",
+            "MODULE_REQUIREMENTS: ${6:vin_Base}"
+        ]
+    }
+}

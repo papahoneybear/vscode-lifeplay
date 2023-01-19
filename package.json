@@ -20,6 +20,12 @@
       "language": "lifeplay",
       "scopeName": "source.lifeplay",
       "path": "./syntaxes/lifeplay.tmLanguage.json"
-    }]
+    }],
+    "snippets": [
+      {
+        "language": "lifeplay",
+        "path": "./snippets/snippets.json"
+      }
+    ]
   }
 }
