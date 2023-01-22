@@ -41,8 +41,6 @@ This extension currently provides basic code completion and snippets
 (templates). To execute a snippet, type part of a keyword and select the
 appropriate snippet in the contextual menu.
 
-![Snippet example](/images/snippet.png)
-
 ### Available Snippets
 
 | Name                  | Keywords                      | Effect                              |
