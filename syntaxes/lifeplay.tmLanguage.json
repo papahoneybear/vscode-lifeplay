@@ -48,9 +48,17 @@
     "operators": {
       "patterns": [
         {
-          "name": "keyword.operator.lifeplay",
-          "match": "\\?|\\+\\+|--|\\~|\\!|\\=|\\\\|\\*=|\\*|/=|/|\\+=|\\+|-=|-|<=|<|>|==|\\!=|&&|=>"
-        }
+          "name": "keyword.operator.comparison.lifeplay",
+          "match": "(<\\=|>\\=|\\=\\=|!\\=)"
+        },
+        {
+          "name": "keyword.operator.assignment.lifeplay",
+          "match": "(\\.|\\:|\\:\\:|\\=>|\\=)"
+        },
+		{
+			"name": "keyword.operator.math.lifeplay",
+			"match": "(\\+|-|\\*|/|\\+\\=|-\\=)"
+		}
       ]
     },
     "variables": {
@@ -67,10 +75,10 @@
           "name": "variable.language.action.lifeplay",
           "match": "\\b(ACTION_UNIQUEID|ACTION_NAME|WHERE|WHEN|MINUTES|TIMEOUT_MINUTES|ALSO_TIMEOUT|EFFECTS|CONDITIONS|MOVE_FIRST|SCENE_ALWAYS|ANIMATION|WHO|WHAT)\\b"
         },
-		{
-			"name": "variable.language.lpquest.lifeplay",
-			"match": "\\b(ID|NAME|DESC|ONCE|CONDITIONS|START)\\b"
-		}
+        {
+          "name": "variable.language.lpquest.lifeplay",
+          "match": "\\b(ID|NAME|DESC|ONCE|CONDITIONS|START)\\b"
+        }
       ]
     },
     "methods": {
@@ -81,7 +89,7 @@
         },
         {
           "name": "support.function.command.lifeplay",
-          "match": "\\b(addColleague|addCriminal|addDatingFriend|addEmployee|addNeighbour|addNpcRelationship|addObjective|animate|assignResidents|assignWhat|assignWhere|blendPreset|blockContact|blockNpcRelationships|blockPregnancy|calculateExpenses|calculateRent|calculateRevenue|calculateWages|cameraFocus|cameraMove|changeSex|chooseContact|chooseMajor|clearGetList|clearGlobal|cloneFrom|closeEyes|contractSTD|convertToLocalCurrency|countPregnancyDays|delete|deletePerson|Divorce|dress|dressBondage|dressExcept|dressFormal|dressGuard|dressPrisoner|dressUniform|dressWedding|endDate|endOpenRelationship|endPrison|enterBusinessName|enterFirstName|enterString|exchangeContact|Filter|FilterDesc|FilterTalk|findNearbyBuilding|floor|followUp|forgiveAffairs|generateBuildingAlias|generateCreature|generateCreatureTemporary|generatePerson|generatePersonMatchRace|generatePersonTemporary|generatePersonTemporaryMatchRace|generateRelativeMatchRace|getActorAlias|getActorVar|getAnyRelative|getAssignee|getBuilding|getBuildingType|getCompanion|getCompanionAny|getCompanionCreature|getCreature|getGlobal|getGlobalString|getID|getMarried|getMorphValue|getNumRelative|getPerson|getPersonHere|getRelatedPeople|getRelatedPerson|getRelatedPersonQuick|getRelative|getRelativeExcept|getRent|getSalary|getSelectedNPC|getSpecific|getTarget|getUntil|imprison|loadPreset|loseDating|loseHome|loseHomeDating|loseJob|losePT|makeInterested|makePermanent|matchLastName|modifyActorVar|modifyReputation|moveFraternity|moveHome|moveJobs|moveSchools|moveTo|moveToPerson|moveToPersonStand|openMenu|OTHER|passOn|passTime|questEnd|quitCrime|quitFraternity|quitLecturing|quitMedical|quitSchool|random|randomizeFace|randomizeHairs|randomizeRace|randomizeSexy|removeAddedClothes|removeColleague|removeDatingFriend|removeEmployee|removeNeighbour|removeNpcRelationship|removeObjective|round|saveAndDelete|saveOldPlayer|secondScreen|secondScreenIfHidden|selectNPC|setActorAlias|setActorVar|setBackground|setBackground3D|setBackgroundCustom|setBoss|setCrimeBoss|setCurrentLocation|setDating|setDifferentMajor|setExRelative|setFraternityFees|setGlobal|setGlobalString|setHomeCity|setJob|setLandlord|setLivingWithPlayer|setMajor|setMorphValue|setPT|setRelativeType|setRent|setSalary|setSameMajor|setSubject|setTuition|setUntil|Sex|sexAtPoint|SexNoAffair|sneakGame|startBusiness|startDate|startOpenRelationship|stopBusiness|strip|stripOne|TalkNonConsensual|timeout|timeoutActor|timeoutActorPrecise|timeoutPrecise)\\b"
+          "match": "\\b(addColleague|addCriminal|addDatingFriend|addEmployee|addNeighbour|addNpcRelationship|addObjective|animate|assignResidents|assignWhat|assignWhere|blendPreset|blockContact|blockNpcRelationships|blockPregnancy|calculateExpenses|calculateRent|calculateRevenue|calculateWages|cameraFocus|cameraMove|changeSex|chooseContact|chooseMajor|clearGetList|clearGlobal|cloneFrom|closeEyes|contractSTD|convertToLocalCurrency|countPregnancyDays|delete|deletePerson|Divorce|dress|dressBondage|dressExcept|dressFormal|dressGuard|dressPrisoner|dressUniform|dressWedding|endDate|endOpenRelationship|endPrison|enterBusinessName|enterFirstName|enterString|exchangeContact|Filter|FilterDesc|FilterTalk|findNearbyBuilding|floor|followUp|forgiveAffairs|generateBuildingAlias|generateCreature|generateCreatureTemporary|generatePerson|generatePersonMatchRace|generatePersonTemporary|generatePersonTemporaryMatchRace|generateRelativeMatchRace|getActorAlias|getActorVar|getAnyRelative|getAssignee|getBuilding|getBuildingType|getCompanion|getCompanionAny|getCompanionCreature|getCreature|getGlobal|getGlobalString|getID|getMarried|getMorphValue|getNumRelative|getPerson|getPersonHere|getRelatedPeople|getRelatedPerson|getRelatedPersonQuick|getRelative|getRelativeExcept|getRent|getSalary|getSelectedNPC|getSpecific|getTarget|getUntil|imprison|loadPreset|loseDating|loseHome|loseHomeDating|loseJob|losePT|makeInterested|makePermanent|matchLastName|modifyActorVar|modifyReputation|moveFraternity|moveHome|moveJobs|moveSchools|moveTo|moveToPerson|moveToPersonStand|openMenu|OTHER|passOn|passTime|questEnd|quitCrime|quitFraternity|quitLecturing|quitMedical|quitSchool|random|randomizeFace|randomizeHairs|randomizeRace|randomizeSexy|removeAddedClothes|removeColleague|removeDatingFriend|removeEmployee|removeNeighbour|removeNpcRelationship|removeObjective|round|saveAndDelete|saveOldPlayer|secondScreen|secondScreenIfHidden|selectNPC|setActorAlias|setActorVar|setBackground|setBackground3D|setBackgroundCustom|setBoss|setCrimeBoss|setCurrentLocation|setDating|setDifferentMajor|setExRelative|setFraternityFees|setGlobal|setGlobalString|setHomeCity|setJob|setLandlord|setLivingWithPlayer|setMajor|setMorphValue|setPT|setRelativeType|setRent|setSalary|setSameMajor|setSubject|setTuition|setUntil|Sex|sexAtPoint|SexNoAffair|sneakGame|startBusiness|startDate|startOpenRelationship|stopBusiness|strip|stripOne|TalkNonConsensual|timeout|timeoutActor|timeoutActorPrecise|timeoutPrecise|show|hide)\\b"
         },
         {
           "name": "support.function.scene.lifeplay",
@@ -92,8 +100,8 @@
     "declarations": {
       "patterns": [
         {
-          "name": "variable.other.defined.lifeplay",
-          "match": "(?<=\\.)([A-Za-z_][A-Za-z0-9_]*)"
+          "name": "entity.name.type.declared.lifeplay",
+          "match": "\\b[,[\\s]?]?([A-z0-9]*)[\\.|[\\s]?=|:|[\\s]?\\)|,]"
         }
       ]
     },
