@@ -33,39 +33,48 @@ Available Snippets
 
 If block
     **Keywords**: If|if
+    
     Creates a basic *If* structure. Alternate templates are provided for 
     `If...Else` and `If...Elseif...Else`.
 
 While block
     **Keywords**: While|while
+    
     Creates a properly formatted *While* structure.
 
 Random block
     **Keywords**: Random|random
+    
     Creates a properly formatted *Random* structure.
 
 Dialog block
     **Keywords**: Tag|tag
+    
     Creates a dialog block for 2 actors.
 
 Scene template
     **Keywords**: WHAT|Scene
+    
     Creates scene file structure.
 
 Stat template
     **Keywords**: stat|STAT_ID
+    
     Creates stat file structure.
 
 Action template
     **Keywords**: ACTION_UNIQUEID|action
+
     Creates action file structure.
 
 Interaction template
     **Keywords**: ACTION_UNIQUEID|interaction
+
     Creates interaction file structure
 
 Module template
     **Keywords**: module|MODULE_UNIQUEID
+
     Creates module file structure     
 
 .. _feature:
