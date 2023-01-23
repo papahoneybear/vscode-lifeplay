@@ -30,7 +30,7 @@ Bleeding Edge Installation: Windows (Advanced Users)
 3. Type ``git clone git@github.com:papahoneybear/vscode-lifeplay.git``.
 
 Occasionally (or on a schedule with a batch script) run the following 
-commands:::
+commands::
 
     cd %USERPROFILE\.vscode\extensions\vscode-lifeplay
     git pull origin main
@@ -44,9 +44,9 @@ Bleeding Edge Installation: Linux/Unix (Advanced Users)
 2. Type ``cd ~/.vscode/extensions`` and press **Enter/Return**.
 3. Type ``git clone git@github.com:papahoneybear/vscode-lifeplay.git``.
 
-Occasionally (or on a schedule with a crontab entry) run the following commands:
+Occasionally (or on a schedule with a crontab entry) run the following
+commands::
 
-.. code-block
     cd ~/.vscode/extensions/vscode-lifeplay
     git pull origin main
 
@@ -64,48 +64,48 @@ Available Snippets
 ===============================================================================
 
 If block
-    **Keywords**: If|if
+    **Keywords**: ``If|if``
     
-    Creates a basic *If* structure. Alternate templates are provided for 
-    ``If...Else``` and ```If... Elseif... Else``.
+    Creates a basic ``If`` structure. Alternate templates are provided for 
+    ``If...Else`` and ``If... Elseif... Else``.
 
 While block
-    **Keywords**: While|while
+    **Keywords**: ``While|while``
     
     Creates a properly formatted *While* structure.
 
 Random block
-    **Keywords**: Random|random
+    **Keywords**: ``Random|random``
     
     Creates a properly formatted *Random* structure.
 
 Dialog block
-    **Keywords**: Tag|tag
+    **Keywords**: ``Tag|tag``
     
     Creates a dialog block for 2 actors.
 
 Scene template
-    **Keywords**: WHAT|Scene
+    **Keywords**: ``WHAT|Scene``
     
     Creates scene file structure.
 
 Stat template
-    **Keywords**: stat|STAT_ID
+    **Keywords**: ``stat|STAT_ID``
     
     Creates stat file structure.
 
 Action template
-    **Keywords**: ACTION_UNIQUEID|action
+    **Keywords**: ``ACTION_UNIQUEID|action``
 
     Creates action file structure.
 
 Interaction template
-    **Keywords**: ACTION_UNIQUEID|interaction
+    **Keywords**: ``ACTION_UNIQUEID|interaction``
 
     Creates interaction file structure
 
 Module template
-    **Keywords**: module|MODULE_UNIQUEID
+    **Keywords**: ``module|MODULE_UNIQUEID``
 
     Creates module file structure     
 
