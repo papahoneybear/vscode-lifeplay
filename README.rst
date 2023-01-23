@@ -29,9 +29,9 @@ Bleeding Edge Installation: Windows (Advanced Users)
 2. Type ``cd %USERPROFILE%\.vscode\extensions`` and press **Enter**.
 3. Type ``git clone git@github.com:papahoneybear/vscode-lifeplay.git``.
 
-Occasionally (or on a schedule with a batch script) run the following commands:
+Occasionally (or on a schedule with a batch script) run the following 
+commands:::
 
-.. code-block
     cd %USERPROFILE\.vscode\extensions\vscode-lifeplay
     git pull origin main
 
