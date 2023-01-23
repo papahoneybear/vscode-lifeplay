@@ -8,15 +8,16 @@ extension is not published to VSCode's extension repository. See the
 Installation_ section for details on how to manually install.
 
 .. toctree::
+    :numbered:
 
 .. _Installation
 Installation
 -------------------------------------------------------------------------------
 
-1. Download the latest vsix file from the repository_.
+1. Download the latest `vsix` file from the repository_.
 2. Open the **Extensions** pane: `ctrl-shift-x`.
 3. Click the *elipsis* button in the explorer and choose **Install from VSIX**.
-4. Select the downloaded vsix file.
+4. Select the downloaded `vsix` file.
 
 .. _usage
 Usage
