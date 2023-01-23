@@ -25,13 +25,13 @@ Bleeding Edge Installation: Windows (Advanced Users)
 
 *Prerequisites*: git_, vscode_ 
 
-1. Open a command prompt (`[Windows Key]` and type `cmd`).
-2. Type `cd %USERPROFILE%\.vscode\extensions` and press **Enter**.
-3. Type `git clone git@github.com:papahoneybear/vscode-lifeplay.git`.
+1. Open a command prompt (``[Windows Key]`` and type ``cmd``).
+2. Type ``cd %USERPROFILE%\.vscode\extensions`` and press **Enter**.
+3. Type ``git clone git@github.com:papahoneybear/vscode-lifeplay.git``.
 
 Occasionally (or on a schedule with a batch script) run the following commands:
 
-::
+.. code-block
     cd %USERPROFILE\.vscode\extensions\vscode-lifeplay
     git pull origin main
 
@@ -41,12 +41,12 @@ Bleeding Edge Installation: Linux/Unix (Advanced Users)
 *Prerequisites*: git_, vscode_
 
 1. Open a terminal window.
-2. Type `cd ~/.vscode/extensions` and press **Enter/Return**.
-3. Type `git clone git@github.com:papahoneybear/vscode-lifeplay.git`.
+2. Type ``cd ~/.vscode/extensions`` and press **Enter/Return**.
+3. Type ``git clone git@github.com:papahoneybear/vscode-lifeplay.git``.
 
 Occasionally (or on a schedule with a crontab entry) run the following commands:
 
-::
+.. code-block
     cd ~/.vscode/extensions/vscode-lifeplay
     git pull origin main
 
@@ -67,7 +67,7 @@ If block
     **Keywords**: If|if
     
     Creates a basic *If* structure. Alternate templates are provided for 
-    `If...Else` and `If...Elseif...Else`.
+    ``If...Else``` and ```If... Elseif... Else``.
 
 While block
     **Keywords**: While|while
