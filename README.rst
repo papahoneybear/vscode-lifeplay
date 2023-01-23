@@ -7,6 +7,8 @@ Code editor. It is actively in development and not feature-complete. The
 extension is not published to VSCode's extension repository. See the
 Installation_ section for details on how to manually install.
 
+.. toctree::
+
 .. _Installation
 Installation
 -------------------------------------------------------------------------------
@@ -71,9 +73,6 @@ Feature Requests and Bug Reporting
 Request new features and report bugs in the Issues_ section.
 
 .. include:: CHANGELOG.rst
-
-License
--------------------------------------------------------------------------------
 
 .. include:: LICENSE.rst
 
