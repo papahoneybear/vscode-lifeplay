@@ -70,6 +70,12 @@ Feature Requests and Bug Reporting
 -------------------------------------------------------------------------------
 Request new features and report bugs in the Issues_ section.
 
+.. include:: CHANGELOG.rst
+
+License
+-------------------------------------------------------------------------------
+
+.. include:: LICENSE.rst
 
 .. _repository: https://github.com/papahoneybear/vscode-lifeplay/releases/latest
 .. _Issues: https://github.com/papahoneybear/vscode-lifeplay/issues
