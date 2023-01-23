@@ -20,7 +20,10 @@ Binary Installation
 3. Click the *elipsis* button in the explorer and choose **Install from VSIX**.
 4. Select the downloaded `vsix` file.
 
-Bleeding Edge Installation: Windows (Advanced Users)
+Bleeding Edge Installation
+===============================================================================
+
+Windows (Advanced Users)
 -------------------------------------------------------------------------------
 
 *Prerequisites*: git_, vscode_ 
@@ -35,7 +38,7 @@ commands::
     cd %USERPROFILE\.vscode\extensions\vscode-lifeplay
     git pull origin main
 
-Bleeding Edge Installation: Linux/Unix (Advanced Users)
+Linux/Unix (Advanced Users)
 -------------------------------------------------------------------------------
 
 *Prerequisites*: git_, vscode_
